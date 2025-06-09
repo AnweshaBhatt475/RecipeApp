@@ -1,0 +1,175 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Background Styling */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a55);
+    color: #ffffff;
+}
+
+/* Main Container */
+.main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Heading Style */
+.heading h1 {
+    color: #fcde67;
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 400px;
+    height: 50px;
+    border: 2px solid #fcde67;
+    outline: none;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.search-bar:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Container Grid */
+.container {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Card Text */
+.card h3 {
+    color: #fcde67;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Recipe Content */
+.content img {
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Inner Content */
+.content .inner-content {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 1.6rem;
+    padding: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Recipe Details */
+.recipe-details {
+    width: 70%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Ingredients & Instructions */
+.ingredients, .instructions {
+    flex-basis: 50%;
+    text-align: justify;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Ingredients Text */
+.ingredients h4 {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Video Section */
+.video {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+/* Alphabet Index Container */
+.indexContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2.5rem 0;
+}
+
+/* Individual Alphabet Box */
+.numBox {
+    width: 55px;
+    height: 45px;
+    background-color: #fcde67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e1e2f;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.numBox:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+}
